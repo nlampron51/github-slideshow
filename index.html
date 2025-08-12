@@ -1,13 +1,46 @@
----
-layout: presentation
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Portfolio | Welcome</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Teacher</span> Portfolio</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="students.html">Students</a></li>
+                    <li><a href="homework.html">Homework</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-{% for post in site.posts reversed %}
-	{% include slide.html %}
-	<div class="page-break"></div>
-{% endfor %}
-{% unless site.simple-slideshow %}
-{% if site.overview %}
-<section id="overview" class="step" {% for attr in site.overview-data %} data-{{attr[0]}}="{{attr[1]}}"{% endfor %}></section>
-{% endif %}
-{% endunless %}
+    <section id="showcase">
+        <div class="container">
+            <h1>Welcome to the Portfolio</h1>
+            <p>A place to find all the information you need.</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <section id="main-content">
+            <article>
+                <h2>About Me</h2>
+                <p>Welcome to my portfolio! I am a dedicated teacher with a passion for education and a commitment to helping my students succeed. Here you will find information about my classes, assignments, and resources to help you on your learning journey.</p>
+            </article>
+        </section>
+    </div>
+
+    <footer>
+        <p>Teacher Portfolio &copy; 2025</p>
+    </footer>
+</body>
+</html>
